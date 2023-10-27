@@ -1,0 +1,2 @@
+Proszę odpowiedzieć na pytanie za pomocą jakiego mechanizmu aplikacja wydrukowała w konsoli komunikat ‘new connection’?
+
