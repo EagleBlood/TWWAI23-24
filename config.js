@@ -1,4 +1,4 @@
-let port = 6969
+let port = 3000
 
 module.exports = {
     port: port

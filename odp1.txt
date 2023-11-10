@@ -1,3 +1,0 @@
-Proszę odpowiedzieć na pytanie za pomocą jakiego mechanizmu aplikacja wydrukowała w konsoli komunikat ‘new connection’?
-
-Aplikacja wydrukowała komunikat za pomocą mechanizmu obsługi zdarzeń który jest wbudowany w środowisko Node.js.
