@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 const Posts = () => {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState<any[] | null>(null);
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
        const fetchData = async () => {
            try {
-               const response = await fetch('http://localhost:3100/api/posts');
+               const response = await fetch('http://localhost:5173/api/posts');
                const result = await response.json();
     
                console.log(result)
@@ -30,7 +30,7 @@ const Posts = () => {
        ) : (
            <div>
                <ul style={{listStyleType: "none"}}>
-                   {data.map((item, index) => (
+                    {data && data.map((item: any, index: number) => (
                        <li key={index}>
                            <div>
                                Tytuł: {item.title}
@@ -38,6 +38,7 @@ const Posts = () => {
                            <div>
                                {item.text}
                            </div>
+
                            <hr/>
                        </li>
 
@@ -47,7 +48,6 @@ const Posts = () => {
        )}
    </div>
     );
-
 }
 
 export default Posts;
