@@ -21,7 +21,7 @@ const AddPost: React.FC = () => {
 
        try {
            // Wysłanie danych do API (fetch) za pomocą metody POST
-           const response = await fetch('http://localhost:5173/api/posts', {
+           const response = await fetch('http://localhost:3100/api/posts', {
                method: 'POST',
                headers: {
                    'Content-Type': 'application/json',

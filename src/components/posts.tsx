@@ -7,7 +7,7 @@ const Posts = () => {
     useEffect(() => {
        const fetchData = async () => {
            try {
-               const response = await fetch('http://localhost:5173/api/posts');
+               const response = await fetch('http://localhost:3100/api/posts');
                const result = await response.json();
     
                console.log(result)
